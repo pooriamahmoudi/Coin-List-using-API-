@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <table class="table" id="table">
+        <thead>
+          <tr>
+            <th class="rank-th">Rank</th>
+            <th class="empty1-th"></th>
+            <th class="empty2-th"></th>
+            <th class="name-th">Name</th>
+            <th class="price-th">Price(USD)</th>
+            <th class="changePrice-th">24H Change</th>
+            <th class="empty3-th"></th>
+          </tr>
+        </thead>
+        <tbody id="t-body"></tbody>
+      </table>
+    </div>
+    <div class="buttons-container">
+      <button class="page" id="page1">1</button>
+      <button class="page" id="page2">2</button>
+      <button class="page" id="page3">3</button>
+      <button class="page" id="page4">4</button>
+      <button class="page" id="page5">5</button>
+    </div>
+    <dialog id="dialog">
+      <button id="exit" class="exit">x</button>
+      <div class="chart" id="chart"></div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

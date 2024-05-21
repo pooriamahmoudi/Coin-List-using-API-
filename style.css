@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #ffffff;
+  margin: 20px 0;
+  width: 900px;
+  padding: 4px;
+  border: 2px solid #06b5f7;
+  border-radius: 20px;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  font-size: 18px;
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  font-size: 16px;
+  text-align: left;
+  padding: 8px;
+}
+
+img {
+  width: 30px;
+}
+
+.symbol {
+  font-size: 12px;
+}
+
+.page {
+  background-color: #fff;
+  margin-left: 5px;
+}
+
+button {
+  width: 50px;
+  padding: 4px 0;
+  border: 2px solid #06b5f7;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid orangered;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+tr:hover {
+  background-color: #b8ecfb;
+}
+
+td:hover {
+  background-color: #2cbfec;
+}
+
+dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 600px;
+  height: 500px;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  border: 3px solid orange;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #2cbfec;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  padding: 0;
+}
+
+.chart {
+  width: 550px;
+  height: 470px;
+  margin-top: 5px;
+  margin-top: 5px;
+  margin-left: 4px;
+}
+
+.exit {
+  align-items: center;
+  position: fixed;
+  right: 1px;
+  top: 1px;
+  border: 3px solid #2cbfec;
+  border-radius: 50%;
+  width: 20px;
+  height: 25px;
+  padding: 2px;
+}
+
+@media screen and (max-width: 922px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+  td {
+    font-size: 14px;
+  }
+
+  dialog {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .container {
+    width: 350px;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+  td {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .empty1-th {
+    display: none;
+  }
+
+  .symbol-td {
+    display: none;
+  }
+
+  dialog {
+    width: 320px;
+  }
+
+  .exit {
+    width: 15px;
+  }
+
+  img {
+    width: 20px;
+  }
+  .rank-td {
+    font-size: 10px;
+  }
+
+  .chartBtn {
+    font-size: 10px;
+  }
+
+  .empty3-th {
+    display: none;
+  }
+}
